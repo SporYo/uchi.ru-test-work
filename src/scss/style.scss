@@ -1,0 +1,70 @@
+$bg-color: #fff;
+$color: #fff;
+$font-color: #000;
+
+body {
+    font-family: Arial;
+    background: $bg-color;
+    color: $font-color;
+    text-align: center;
+    input {
+        outline:none;
+    }
+    .input-error {
+        color: red;
+    }
+    
+    .span-error {
+        background-color: orange;
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+    }
+    .equation {
+        font-size: 28px;
+        margin: 30px 0 150px 0;
+        height: 50px;
+        .finalInput {
+            border: 3px solid rgb(153, 153, 153);
+            border-radius: 7px;
+            width: 40px;
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .container {
+        width: 875px;
+        margin: 0 auto;
+        .content {
+            position: relative;
+            margin: 0 auto; 
+            width: 800px;
+            .canvas-container {
+                position: relative;
+                margin: 0 auto;
+                .first-input, 
+                .second-input {
+                    display: none;
+                    border: 3px solid rgb(153, 153, 153);
+                    border-radius: 7px;
+                    width: 20px;
+                    font-size: 25px;
+                    text-align: center;
+            }
+                .canvas {
+                    z-index: 1;
+                    margin: 0 auto -68px;
+                    display: block;
+                    margin-left: 35px;
+            }
+            }
+            .scale {
+                display: block;
+                margin: 0 auto;
+                width: 875px;
+                height: 80px;
+            }
+        }
+    }
+    
+}
+
